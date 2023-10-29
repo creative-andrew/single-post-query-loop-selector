@@ -1,0 +1,31 @@
+{
+	"name": "single-post-query-loop-selector",
+	"version": "0.1.0",
+	"description": "A Query Loop block variation that allow to search and select a single post to be displayed.",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"devDependencies": {
+		"@types/wordpress__block-editor": "^11.5.6",
+		"@types/wordpress__blocks": "^12.5.7",
+		"@types/wordpress__components": "^23.0.5",
+		"@typescript-eslint/eslint-plugin": "^6.9.0",
+		"@typescript-eslint/parser": "^6.9.0",
+		"@wordpress/core-data": "^6.21.0",
+		"@wordpress/eslint-plugin": "^17.1.0",
+		"@wordpress/prettier-config": "^3.1.0",
+		"@wordpress/scripts": "^26.15.0",
+		"eslint": "^8.52.0",
+		"eslint-plugin-react": "^7.33.2",
+		"wp-types": "^3.63.0"
+	}
+}
