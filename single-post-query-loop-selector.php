@@ -36,7 +36,7 @@ function enqueue_block_editor_assets() {
 
 add_filter(
 	'pre_render_block',
-	__NAMESPACE__ . '\pre_reender_block',
+	__NAMESPACE__ . '\pre_render_block',
 	10,
 	2
 );
