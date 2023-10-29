@@ -22,12 +22,14 @@ const SinglePostPicker: React.FC< SinglePostPickerProps > = ( {
 	attributes,
 } ) => {
 	const [ search, setSearch ] = useState( '' );
-	const { isResolving, records: posts } =
-		// eslint-disable-next-line camelcase
-		useEntityRecords< WPRestAPIPost >( 'postType', 'post', {
+	const { isResolving, records: posts } = useEntityRecords< WPRestAPIPost >(
+		'postType',
+		'post',
+		{
 			per_page: 10,
 			search,
-		} );
+		}
+	);
 
 	const setSearchDebounced = useDebounce( ( value ) => {
 		setSearch( value );

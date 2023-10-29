@@ -9,7 +9,7 @@ License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://paypal.me/creativeandrewdev
 
-A Query Loop block variation that allow to search and select a single post to be displayed.
+A Query Loop block variation that allows to search and select a single post to be displayed.
 
 == Description ==
 
