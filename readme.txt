@@ -21,6 +21,8 @@ This plugin introduces a Query Loop block variation that allows you to search an
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Screenshots ==
+1. Single post loop selector inserter and controls.
+2. Single post query loop in action showing one post.
 
 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
 the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets

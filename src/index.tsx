@@ -15,14 +15,12 @@ interface BlockCoreQueryAttributes extends BlockVariation {
 
 registerBlockVariation( 'core/query', {
 	name: VARIATION_NAME,
-	title: __(
-		'Single Post Query Loop Variation',
-		'single-post-query-loop-selector'
-	),
+	title: __( 'Single Post Query Loop', 'single-post-query-loop-selector' ),
 	description: __(
-		'Allow you to search and selector a single post for the query loop.',
+		'Allow you to search and select a single post.',
 		'single-post-query-loop-selector'
 	),
+	category: 'theme',
 	isActive: [ 'namespace' ],
 	attributes: {
 		namespace: VARIATION_NAME,
