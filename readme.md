@@ -22,11 +22,6 @@ This plugin introduces a Query Loop block variation that allows you to search an
 1. Upload the plugin files to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
-## Screenshots
-
-- Single post loop selector inserter and controls.
-- Single post query loop in action showing one post.
-
 ## Changelog
 
 ### 0.1.0
