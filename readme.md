@@ -19,7 +19,7 @@ This plugin introduces a Query Loop block variation that allows you to search an
 
 ## Installation
 
-1. Upload the plugin files to the `/wp-content/plugins/single-post-query-loop-selector` directory.
+1. Upload the plugin files to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
 ## Screenshots
