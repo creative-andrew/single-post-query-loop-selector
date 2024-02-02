@@ -100,6 +100,10 @@ class Plugin {
 			if ( isset( $this->parsed_block['attrs']['query']['include'] ) ) {
 				$query['post__in'] = $this->parsed_block['attrs']['query']['include'];
 			}
+
+			if ( isset( $this->parsed_block['attrs']['query']['postType'] ) ) {
+				$query['post_type'] = $this->parsed_block['attrs']['query']['postType'];
+			}
 		}
 
 		// Our work here is done (backs away slowly).

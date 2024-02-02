@@ -24,7 +24,7 @@ const SinglePostPicker: React.FC< SinglePostPickerProps > = ( {
 	const [ search, setSearch ] = useState( '' );
 	const { isResolving, records: posts } = useEntityRecords< WPRestAPIPost >(
 		'postType',
-		'post',
+		attributes?.query?.postType || 'post',
 		{
 			per_page: 10,
 			search,

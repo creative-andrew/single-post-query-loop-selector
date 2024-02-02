@@ -10,7 +10,7 @@ import { SinglePostPicker } from './single-post-picker';
 const VARIATION_NAME = 'creativeandrew/single-post-query-loop-selector';
 
 interface BlockCoreQueryAttributes extends BlockVariation {
-	allowedControls: [];
+	allowedControls: [ 'postType' ],
 }
 
 registerBlockVariation( 'core/query', {
@@ -31,7 +31,7 @@ registerBlockVariation( 'core/query', {
 		},
 		className: 'is-style-single-post-query-loop-selector',
 	},
-	allowedControls: [],
+	allowedControls: [ 'postType' ],
 	innerBlocks: [
 		[
 			'core/post-template',
