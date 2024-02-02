@@ -24,7 +24,7 @@ const SinglePostPicker: React.FC< SinglePostPickerProps > = ( {
 	const [ search, setSearch ] = useState( '' );
 	const { isResolving, records: posts } = useEntityRecords< WPRestAPIPost >(
 		'postType',
-		'post',
+		attributes?.query?.postType || 'post',
 		{
 			per_page: 10,
 			search,
@@ -41,7 +41,7 @@ const SinglePostPicker: React.FC< SinglePostPickerProps > = ( {
 				<PanelBody>
 					<ComboboxControl
 						label={ __(
-							'Search a post',
+							'Search for a post',
 							'single-post-query-loop-selector'
 						) }
 						onChange={ ( value ) => {
@@ -63,7 +63,7 @@ const SinglePostPicker: React.FC< SinglePostPickerProps > = ( {
 								? [
 										{
 											label: __(
-												'Loading&hellip;',
+												'Loading…',
 												'single-post-query-loop-selector'
 											),
 											value: 'loading',

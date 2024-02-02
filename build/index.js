@@ -41,7 +41,7 @@ const SinglePostPicker = ({
   const {
     isResolving,
     records: posts
-  } = (0,_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__.useEntityRecords)('postType', 'post', {
+  } = (0,_wordpress_core_data__WEBPACK_IMPORTED_MODULE_3__.useEntityRecords)('postType', attributes?.query?.postType || 'post', {
     per_page: 10,
     search
   });
@@ -49,7 +49,7 @@ const SinglePostPicker = ({
     setSearch(value);
   }, 300);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ComboboxControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__.__)('Search a post', 'single-post-query-loop-selector'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__.__)('Search for a post', 'single-post-query-loop-selector'),
     onChange: value => {
       const newAttributes = {
         attributes,
@@ -65,7 +65,7 @@ const SinglePostPicker = ({
       setSearchDebounced(value);
     },
     options: isResolving ? [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__.__)('Loading&hellip;', 'single-post-query-loop-selector'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_6__.__)('Loading…', 'single-post-query-loop-selector'),
       value: 'loading'
     }] : posts?.map(post => ({
       label: post?.title?.rendered,
@@ -291,7 +291,7 @@ const VARIATION_NAME = 'creativeandrew/single-post-query-loop-selector';
     },
     className: 'is-style-single-post-query-loop-selector'
   },
-  allowedControls: [],
+  allowedControls: ['postType'],
   innerBlocks: [['core/post-template', {}, [['core/post-title'], ['core/post-excerpt']]]],
   scope: ['inserter']
 });
