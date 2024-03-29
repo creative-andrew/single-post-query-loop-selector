@@ -5,9 +5,9 @@
 
 **Contributors:** geisthanen  
 **Tags:** Query Loop, Single Post, Variation  
-**Requires at least:** 6.2  
-**Tested up to:** 6.3  
-**Stable tag:** 0.1.0  
+**Requires at least:** 6.1 
+**Tested up to:** 6.4.3  
+**Stable tag:** 0.1.1  
 **Requires PHP:** 7.2  
 **License:** GPL-2.0-or-later  
 **License URI:** [GPL-2.0](https://www.gnu.org/licenses/gpl-2.0.html)  
@@ -23,6 +23,12 @@ This plugin introduces a Query Loop block variation that allows you to search an
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
 ## Changelog
+
+= 0.1.2 =
+* Fixed wrong version bumped
+
+= 0.1.1 =
+* Fixed filter affecting other queries
 
 ### 0.1.0
 

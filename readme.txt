@@ -3,7 +3,7 @@ Contributors:      geisthanen
 Tags:              Query Loop, Single Post, Variation
 Requires at least: 6.1
 Tested up to:      6.4.3
-Stable tag:        0.1.1
+Stable tag:        0.1.2
 Requires PHP:      7.2
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,9 @@ This plugin introduces a Query Loop block variation that allows you to search an
 2. Single post query loop in action showing one post.
 
 == Changelog ==
+
+= 0.1.2 =
+* Fixed wrong version bumped
 
 = 0.1.1 =
 * Fixed filter affecting other queries

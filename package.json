@@ -1,6 +1,6 @@
 {
 	"name": "single-post-query-loop-selector",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A Query Loop block variation that allow to search and select a single post to be displayed.",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

@@ -4,7 +4,7 @@
  * Description:       A Query Loop block variation that allows to search and select a single post to be displayed.
  * Requires at least: 6.1
  * Requires PHP:      7.4
- * Version:           0.1.0
+ * Version:           0.1.2
  * Author:            Creative Andrew
  * Author URI:        https://creativeandrew.me
  * License:           GPL-2.0-or-later
