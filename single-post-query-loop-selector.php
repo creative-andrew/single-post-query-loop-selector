@@ -53,11 +53,14 @@ add_filter(
  * @return array The modified pre-render data.
  */
 function pre_render_block( $pre_render, $parsed_block ) {
-	if ( isset( $parsed_block['attrs']['namespace'] ) && 'creativeandrew/single-post-query-loop-selector' === $parsed_block['attrs']['namespace'] ) {
+	if ( isset( $parsed_block['attrs']['namespace'] )
+	&& 'creativeandrew/single-post-query-loop-selector' === $parsed_block['attrs']['namespace'] ) {
 		add_filter(
 			'query_loop_block_query_vars',
-			function ( $default_query ) use ( $parsed_block ) {
-				if ( isset( $parsed_block['attrs']['query']['include'] ) ) {
+			function ( $default_query, $block ) use ( $parsed_block ) {
+				if ( isset( $parsed_block['attrs']['query']['include'] )
+				&& isset( $block->context['queryId'] )
+				&& $block->context['queryId'] === $parsed_block['attrs']['queryId'] ) {
 					$default_query['post__in'] = $parsed_block['attrs']['query']['include'];
 				}
 
